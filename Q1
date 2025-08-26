@@ -1,0 +1,11 @@
+filename=input("Enter file name(.txt): ")
+if filename=='sample.txt':
+    file1 = open(filename, 'r')
+    print('Reading file content:')
+    reading=file1.readline()
+    print('Line 1:',reading)
+    reading2=file1.readline()
+    print('Line 2:',reading2)
+    file1.close()
+else:
+    print('Error:The file',filename,'wa not found')
