@@ -1,6 +1,8 @@
 wrt=input('Enter text to write to the file:')
 file1=open('output.txt','w')
-file1.write(wrt)
+file1.write(wrt + '\n')
+file1.close()
+file1=open('output.txt','r')
 file1.close()
 print('Data successfully written to output.txt. \n \n')
 
